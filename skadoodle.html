@@ -1,0 +1,22 @@
+<body>
+	<div id="output"></div>
+	<button id="runprog">Perform Clothing Check</button>
+</body>
+<script>
+	
+	function doCheck() {
+		var Temperature;
+		
+		Temperature = prompt("Enter the current temperaure");
+		var output = document.getElementById("output");
+		
+		if ( Temperature <=10 ) {
+			output.innerHTML = "If the temperature is " + Temperature + " Degrees celsius,<br>";
+			output.innerHTML += "then is cold enough wear a hoodie.";
+		}
+		else 
+			output.innerHTML = "It is not that cold outside.";
+	}
+	
+	document.getElementById("runprog").addEventListener("click",doCheck);
+</script>	

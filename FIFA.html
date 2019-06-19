@@ -1,0 +1,168 @@
+<!doctype html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<link rel="icon" type="image/jpg" href="FIFALOGO.jpg" />
+	<head><h1><center>CREATE YOUR OWN SOCCER PLAYER</center></h1>	
+		<body>
+		<form>
+		  First name:<br>
+		  <input type="text" name="firstname" value="">
+		  <br>
+		  Last name:<br>
+		  <input type="text1" name="lastname" value="">
+		  <br><br>
+		</form>
+		</body>
+		<style>
+			background-color: #00FF00
+			.demo {
+		  width: 15%;
+		  border: 1px solid #666;
+			}
+			div#msgBox {
+			  border: 1px solid #333;
+			  background-color: #eee;
+			  height: 170px;
+			  width: 30%;
+			  padding: 6px;
+			  border-radius: 3px;
+			}
+			body  {
+			  background-image: url("PALESTRA.jpg");
+			  background-color: #cccccc;
+			}
+			</style>
+			<title>SOCCER PLAYER</title>
+			SPEED
+			<div class="demo"> 
+			  <input type="range" min="0" max="10" id="slider">
+			  <span id="output">
+			  </span>
+			</div><br><br>
+			ACCURACY
+			<div class="demo">
+			  <input type="range" min="0" max="10" id="slider2">
+			  <span id="output2"></span>
+			</div><br><br>
+			STRENGTH
+			<div class="demo">
+			  <input type="range" min="0" max="10" id="slider3">
+			  <span id="output3"></span>
+			</div><br><br>
+			HEIGHT(in cm)
+			<div class="demo">
+			  <input type="range" min="150" max="215" id="slider4">
+			  <span id="output4"></span>
+			</div><br><br>
+			WEIGHT(in kg)
+			<div class="demo">
+			  <input type="range" min="45" max="130" id="slider5">
+			  <span id="output5"></span>
+			</div><br><br>
+			SHIRT NUMBER
+			<div class="demo">
+			  <input type="range" min="1" max="99" id="slider6">
+			  <span id="output6"></span>
+			</div><br><br>
+			<input type="button" value="SUBMIT" id="myButton"><BR><br>
+			<input type="button" value="RANDOM STATS" id="myButton2"><br><br>
+			<h1>YOUR PLAYER OVERALL STATUS</h1>
+			<div id="msgBox">
+
+			</div>
+		</style>
+		<script>
+			$(document).ready(initialize);
+
+			$("#slider").on("change",doThis)
+			$("#slider2").on("change",doThis2)
+			$("#slider3").on("change",doThis3)
+			$("#slider4").on("change",doThis4)
+			$("#slider5").on("change",doThis5)
+			$("#slider6").on("change",doThis6)
+
+			function initialize() {
+				$("#output").html(5);
+			}
+
+			function doThis(evt) {
+				var value = evt.target.value;
+			  $("#output").html(value);
+			}
+
+			function doThis2(evt) {
+				var value = evt.target.value;
+			  $("#output2").html(value);
+			}
+			function doThis3(evt) {
+				var value = evt.target.value;
+			  $("#output3").html(value);
+			}
+			function doThis4(evt) {
+				var value = evt.target.value;
+			  $("#output4").html(value);
+			}
+			function doThis5(evt) {
+				var value = evt.target.value;
+			  $("#output5").html(value);
+			}
+			function doThis6(evt) {
+				var value = evt.target.value;
+			  $("#output6").html(value);
+			}
+			
+			function randomStats() {
+				var randomStats = Math.random();
+				var values = []
+				values[0] = 3;
+				values[1] = 5;
+				values[2] = 7;
+				values[3] = 57;
+				values[4] = 190;
+				values[5] = 10;
+				
+				return values;
+			}
+			
+			function genRandomStats() {
+				stats = randomStats();
+			}
+
+			$("#myButton").on("click",readSlider)
+			
+			var a;
+			var b;
+			var c;
+			var d;
+			var e;
+			var f;
+			var g;
+			
+			var stats = [];
+			
+			
+			$("#myButton2").on("click",genRandomStats)
+			$("#myButton").on("click",readForm)
+				function readSlider() {
+				stats[0] = $("#slider").val();
+				stats[1] = $("#slider2").val();
+				stats[2] = $("#slider3").val();
+				stats[3] = $("#slider4").val();
+				stats[4] = $("#slider5").val();
+				stats[5] = $("#slider6").val();
+			  var output;
+			  output = "Your player speed is " + a + " and your player accuracy is " + b;
+			  output = "<div>";
+
+			  output = "Your player name is: " + $("input[type=text]").val() + $("input[type=text1]").val()+"<br>";
+			  output += "Speed : " + a + "<br>";
+			  output += "Accuracy: " + b + "<br>";
+			  output += "Strength: " + c + "<br>";
+			  output += "Height: " + d + "cm<br>";
+			  output += "Weight: " + e + "kg<br>";
+			  output +="Shirt number: " + f + "";
+			  $("#msgBox").html(output)
+			}
+			</script>
+
+			

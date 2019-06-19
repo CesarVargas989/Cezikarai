@@ -1,0 +1,2073 @@
+
+<!docype html>
+<html>
+	<head>
+		<title>Brasileirao®</title>
+		<link rel="icon" type="image/jpg" href="Brasileirao-2018.jpg" />
+		<style>		
+			.all {
+				background-color: #edf0f4;
+			}
+			
+			.title {
+				text-align: center;
+				font-family: calibri;
+				font-size: 30px;
+				text-decoration: underline;
+			}
+			
+			.main {
+				text-align: center;
+				display: block;
+				min-width: 1200px;
+			}
+			
+			.left-side {
+				text-align: center;
+				border: 6px solid green;
+				display: inline-block;
+				width: 900px;
+				height: 920px;
+				vertical-align: top;
+				font-family: calibri;
+				border-radius: 25px;
+			}
+			
+			.right-side {
+				text-align: center;
+				display: inline-block;
+				width: 200px;
+				height: 920px;
+				vertical-align: top;
+				font-family: calibri;
+				border-radius: 25px;
+			}
+			
+			.clubs_1-3 {
+				text-align: center;
+				border: 3px solid green;
+				display: inline-block;
+				width: 290px;
+				height: 100px;
+				vertical-align: top;
+				font-family: calibri;
+				border-radius: 25px;
+			}
+			
+			.clubs_4-6 {
+				text-align: center;
+				border: 3px solid green;
+				display: inline-block;
+				width: 290px;
+				height: 100px;
+				vertical-align: top;
+				font-family: calibri;
+				border-radius: 25px;
+			}
+			
+			.clubs_7-9 {
+				text-align: center;
+				border: 3px solid green;
+				display: inline-block;
+				width: 290px;
+				height: 100px;
+				vertical-align: top;
+				font-family: calibri;
+				border-radius: 25px;
+			}
+			
+			.clubs_10-12 {
+				text-align: center;
+				border: 3px solid green;
+				display: inline-block;
+				width: 290px;
+				height: 100px;
+				vertical-align: top;
+				font-family: calibri;
+				border-radius: 25px;
+			}
+			
+			.clubs_13-15 {
+				text-align: center;
+				border: 3px solid green;
+				display: inline-block;
+				width: 290px;
+				height: 100px;
+				vertical-align: top;
+				font-family: calibri;
+				border-radius: 25px;
+			}
+			
+			.clubs_16-18 {
+				text-align: center;
+				border: 3px solid green;
+				display: inline-block;
+				width: 290px;
+				height: 100px;
+				vertical-align: top;
+				font-family: calibri;
+				border-radius: 25px;
+			}
+			
+			.upcoming-games-main {
+				text-align: center;
+				border: 3px solid green;
+				width: 895px;
+				height: 215px;
+				font-family: calibri;
+				border-radius: 25px;
+			}
+			
+			.upcoming-games-insite {
+				text-align: center;
+				font-weight: bold;
+				display: inline-block;
+				vertical-align: top;
+				width: 90px;
+				height: 135px;
+			}
+			
+			.resuls {
+				text-align: center;
+				border: 3px solid green;
+				width: 195px;
+				height: 458px;
+				font-family: calibri;
+				border-radius: 25px;
+				font-weight: bold;
+			}
+			
+			.table {
+				text-align: left;
+				border: 3px solid green;
+				width: 195px;
+				height: 462px;
+				font-family: calibri;
+				border-radius: 25px;
+				font-weight: bold;
+			}
+			
+			li.first {
+				color:green;
+			}
+			
+			li.second {
+				color:green;
+			}
+			
+			li.third {
+				color:green;
+			}
+			
+			li.fourth {
+				color:orange;
+			}
+			
+			li.fifth {
+				color:orange;
+			}
+			
+			li.sixteenth {
+				color:red;
+			}
+			
+			li.seventeenth {
+				color:red;
+			}
+			
+			li.eighteenth {
+				color:red;
+			}
+			
+			.table-title {
+				text-align: center;
+				font-family: calibri;
+			}
+			
+			.dropdown {
+				display: inline-block;
+				min-width: 160px;
+			}
+
+			.dropdown:hover .dropdown-content {
+				visibility: visible;
+				opacity: 1.0;
+				transition: 0.2s;
+				transition-delay: 0s;
+			}
+			
+			.dropdown-content {
+				visibility: hidden;
+				position: absolute;
+				top: 170px;
+				left: 24%;
+				background-color: #edf0f4;
+				min-width: 160px;
+				box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+				padding: 12px 16px;
+				z-index: 1;
+				text-align: left;
+				border: 3px solid green;
+				border-radius: 15px;
+				opacity : 0.0;
+				transition: 1s;
+				transition-delay: 0.5s;
+				
+			}
+			
+			.dropdown-content-align {
+				display: inline-block;
+				min-width: 200px;
+				text-align: top;
+			}
+			
+			.Palmeiras .tooltiptext-Palmeiras {
+				visibility: hidden;
+				width: 120px;
+				background-color: black;
+				color: #fff;
+				text-align: center;
+				border-radius: 6px;
+				padding: 5px 0;
+				opacity: 0.0;
+				transition: 0.5s;
+				transition-delay: 0.0s;
+
+				/* Position the tooltip */
+				position: absolute;
+				z-index: 1;
+			}
+			
+			.Palmeiras:hover .tooltiptext-Palmeiras {
+				visibility: visible;
+				opacity: 1.0;
+				transition: 0.5s;
+				transition-delay: 1.0s;
+			}
+			
+			.Flamengo .tooltiptext-Flamengo {
+				visibility: hidden;
+				width: 120px;
+				background-color: black;
+				color: #fff;
+				text-align: center;
+				border-radius: 6px;
+				padding: 5px 0;
+				opacity: 0.0;
+				transition: 0.5s;
+				transition-delay: 0.0s;
+
+				/* Position the tooltip */
+				position: absolute;
+				z-index: 1;
+			}
+			
+			.Flamengo:hover .tooltiptext-Flamengo {
+				visibility: visible;
+				opacity: 1.0;
+				transition: 0.5s;
+				transition-delay: 1.0s;
+			}
+			
+			.Internacional .tooltiptext-Internacional {
+				visibility: hidden;
+				width: 120px;
+				background-color: black;
+				color: #fff;
+				text-align: center;
+				border-radius: 6px;
+				padding: 5px 0;
+				opacity: 0.0;
+				transition: 0.5s;
+				transition-delay: 0.0s;
+
+				/* Position the tooltip */
+				position: absolute;
+				z-index: 1;
+			}
+			
+			.Internacional:hover .tooltiptext-Internacional {
+				visibility: visible;
+				opacity: 1.0;
+				transition: 0.5s;
+				transition-delay: 1.0s;
+			}
+			
+			.Gremio .tooltiptext-Gremio {
+				visibility: hidden;
+				width: 120px;
+				background-color: black;
+				color: #fff;
+				text-align: center;
+				border-radius: 6px;
+				padding: 5px 0;
+				opacity: 0.0;
+				transition: 0.5s;
+				transition-delay: 0.0s;
+
+				/* Position the tooltip */
+				position: absolute;
+				z-index: 1;
+			}
+			
+			.Gremio:hover .tooltiptext-Gremio {
+				visibility: visible;
+				opacity: 1.0;
+				transition: 0.5s;
+				transition-delay: 1.0s;
+			}
+			
+			.Corinthians .tooltiptext-Corinthians {
+				visibility: hidden;
+				width: 120px;
+				background-color: black;
+				color: #fff;
+				text-align: center;
+				border-radius: 6px;
+				padding: 5px 0;
+				opacity: 0.0;
+				transition: 0.5s;
+				transition-delay: 0.0s;
+
+				/* Position the tooltip */
+				position: absolute;
+				z-index: 1;
+			}
+			
+			.Corinthians:hover .tooltiptext-Corinthians {
+				visibility: visible;
+				opacity: 1.0;
+				transition: 0.5s;
+				transition-delay: 1.0s;
+			}
+			
+			.Atletico-MG .tooltiptext-Atletico-MG {
+				visibility: hidden;
+				width: 170px;
+				background-color: black;
+				color: #fff;
+				text-align: center;
+				border-radius: 6px;
+				padding: 5px 0;
+				opacity: 0.0;
+				transition: 0.5s;
+				transition-delay: 0.0s;
+
+				/* Position the tooltip */
+				position: absolute;
+				z-index: 1;
+			}
+			
+			.Atletico-MG:hover .tooltiptext-Atletico-MG {
+				visibility: visible;
+				opacity: 1.0;
+				transition: 0.5s;
+				transition-delay: 1.0s;
+			}
+			
+			.Atletico-PR .tooltiptext-Atletico-PR {
+				visibility: hidden;
+				width: 120px;
+				background-color: black;
+				color: #fff;
+				text-align: center;
+				border-radius: 6px;
+				padding: 5px 0;
+				opacity: 0.0;
+				transition: 0.5s;
+				transition-delay: 0.0s;
+
+				/* Position the tooltip */
+				position: absolute;
+				z-index: 1;
+			}
+			
+			.Atletico-PR:hover .tooltiptext-Atletico-PR {
+				visibility: visible;
+				opacity: 1.0;
+				transition: 0.5s;
+				transition-delay: 1.0s;
+			}
+			
+			.Cruzeiro .tooltiptext-Cruzeiro {
+				visibility: hidden;
+				width: 170px;
+				background-color: black;
+				color: #fff;
+				text-align: center;
+				border-radius: 6px;
+				padding: 5px 0;
+				opacity: 0.0;
+				transition: 0.5s;
+				transition-delay: 0.0s;
+
+				/* Position the tooltip */
+				position: absolute;
+				z-index: 1;
+			}
+			
+			.Cruzeiro:hover .tooltiptext-Cruzeiro {
+				visibility: visible;
+				opacity: 1.0;
+				transition: 0.5s;
+				transition-delay: 1.0s;
+			}
+			
+			.Botafogo .tooltiptext-Botafogo {
+				visibility: hidden;
+				width: 120px;
+				background-color: black;
+				color: #fff;
+				text-align: center;
+				border-radius: 6px;
+				padding: 5px 0;
+				opacity: 0.0;
+				transition: 0.5s;
+				transition-delay: 0.0s;
+
+				/* Position the tooltip */
+				position: absolute;
+				z-index: 1;
+			}
+			
+			.Botafogo:hover .tooltiptext-Botafogo {
+				visibility: visible;
+				opacity: 1.0;
+				transition: 0.5s;
+				transition-delay: 1.0s;
+			}
+			
+			.Santos .tooltiptext-Santos {
+				visibility: hidden;
+				width: 170px;
+				background-color: black;
+				color: #fff;
+				text-align: center;
+				border-radius: 6px;
+				padding: 5px 0;
+				opacity: 0.0;
+				transition: 0.5s;
+				transition-delay: 0.0s;
+
+				/* Position the tooltip */
+				position: absolute;
+				z-index: 1;
+			}
+			
+			.Santos:hover .tooltiptext-Santos {
+				visibility: visible;
+				opacity: 1.0;
+				transition: 0.5s;
+				transition-delay: 1.0s;
+			}
+			
+			.Bahia .tooltiptext-Bahia {
+				visibility: hidden;
+				width: 170px;
+				background-color: black;
+				color: #fff;
+				text-align: center;
+				border-radius: 6px;
+				padding: 5px 0;
+				opacity: 0.0;
+				transition: 0.5s;
+				transition-delay: 0.0s;
+
+				/* Position the tooltip */
+				position: absolute;
+				z-index: 1;
+			}
+			
+			.Bahia:hover .tooltiptext-Bahia {
+				visibility: visible;
+				opacity: 1.0;
+				transition: 0.5s;
+				transition-delay: 1.0s;
+			}
+			
+			.Fluminense .tooltiptext-Fluminense {
+				visibility: hidden;
+				width: 120px;
+				background-color: black;
+				color: #fff;
+				text-align: center;
+				border-radius: 6px;
+				padding: 5px 0;
+				opacity: 0.0;
+				transition: 0.5s;
+				transition-delay: 0.0s;
+
+				/* Position the tooltip */
+				position: absolute;
+				z-index: 1;
+			}
+			
+			.Fluminense:hover .tooltiptext-Fluminense {
+				visibility: visible;
+				opacity: 1.0;
+				transition: 0.5s;
+				transition-delay: 1.0s;
+			}
+			
+			.Chapecoense .tooltiptext-Chapecoense {
+				visibility: hidden;
+				width: 120px;
+				background-color: black;
+				color: #fff;
+				text-align: center;
+				border-radius: 6px;
+				padding: 5px 0;
+				opacity: 0.0;
+				transition: 0.5s;
+				transition-delay: 0.0s;
+
+				/* Position the tooltip */
+				position: absolute;
+				z-index: 1;
+			}
+			
+			.Chapecoense:hover .tooltiptext-Chapecoense {
+				visibility: visible;
+				opacity: 1.0;
+				transition: 0.5s;
+				transition-delay: 1.0s;
+			}
+			
+			.Ceara .tooltiptext-Ceara {
+				visibility: hidden;
+				width: 120px;
+				background-color: black;
+				color: #fff;
+				text-align: center;
+				border-radius: 6px;
+				padding: 5px 0;
+				opacity: 0.0;
+				transition: 0.5s;
+				transition-delay: 0.0s;
+
+				/* Position the tooltip */
+				position: absolute;
+				z-index: 1;
+			}
+			
+			.Ceara:hover .tooltiptext-Ceara {
+				visibility: visible;
+				opacity: 1.0;
+				transition: 0.5s;
+				transition-delay: 1.0s;
+			}
+			
+			.Vasco .tooltiptext-Vasco {
+				visibility: hidden;
+				width: 170px;
+				background-color: black;
+				color: #fff;
+				text-align: center;
+				border-radius: 6px;
+				padding: 5px 0;
+				opacity: 0.0;
+				transition: 0.5s;
+				transition-delay: 0.0s;
+
+				/* Position the tooltip */
+				position: absolute;
+				z-index: 1;
+			}
+			
+			.Vasco:hover .tooltiptext-Vasco {
+				visibility: visible;
+				opacity: 1.0;
+				transition: 0.5s;
+				transition-delay: 1.0s;
+			}
+			
+			.Sport .tooltiptext-Sport {
+				visibility: hidden;
+				width: 120px;
+				background-color: black;
+				color: #fff;
+				text-align: center;
+				border-radius: 6px;
+				padding: 5px 0;
+				opacity: 0.0;
+				transition: 0.5s;
+				transition-delay: 0.0s;
+
+				/* Position the tooltip */
+				position: absolute;
+				z-index: 1;
+			}
+			
+			.Sport:hover .tooltiptext-Sport {
+				visibility: visible;
+				opacity: 1.0;
+				transition: 0.5s;
+				transition-delay: 1.0s;
+			}
+			
+			.America-MG .tooltiptext-America-MG {
+				visibility: hidden;
+				width: 120px;
+				background-color: black;
+				color: #fff;
+				text-align: center;
+				border-radius: 6px;
+				padding: 5px 0;
+				opacity: 0.0;
+				transition: 0.5s;
+				transition-delay: 0.0s;
+
+				/* Position the tooltip */
+				position: absolute;
+				z-index: 1;
+			}
+			
+			.America-MG:hover .tooltiptext-America-MG {
+				visibility: visible;
+				opacity: 1.0;
+				transition: 0.5s;
+				transition-delay: 1.0s;
+			}
+			
+			.Vitoria .tooltiptext-Vitoria {
+				visibility: hidden;
+				width: 170px;
+				background-color: black;
+				color: #fff;
+				text-align: center;
+				border-radius: 6px;
+				padding: 5px 0;
+				opacity: 0.0;
+				transition: 0.5s;
+				transition-delay: 0.0s;
+
+				/* Position the tooltip */
+				position: absolute;
+				z-index: 1;
+			}
+			
+			.Vitoria:hover .tooltiptext-Vitoria {
+				visibility: visible;
+				opacity: 1.0;
+				transition: 0.5s;
+				transition-delay: 1.0s;
+			}
+			
+			.Flamengo {
+				position: relative;
+				top: 10px;
+			}
+			
+			.Internacional {
+				position: relative;
+				top: 5px;
+			}
+			
+			.Gremio {
+				position: relative;
+				top: 20px;
+			}
+			
+			.Corinthians {
+				position: relative;
+				top: 5px;
+			}
+			
+			.Atletico-MG {
+				position: relative;
+				top: 12px;
+			}
+			
+			.Atletico-PR {
+				position: relative;
+				top: 12px;
+			}
+			
+			.Cruzeiro {
+				position: relative;
+				top: 15px;
+			}
+			
+			.Botafogo {
+				position: relative;
+				top: 15px;
+			}
+			
+			.Santos {
+				position: relative;
+				top: 15px;
+			}
+			
+			.Bahia {
+				position: relative;
+				top: 12px;
+			}
+			
+			.Fluminense {
+				position: relative;
+				top: 14px;
+			}
+			
+			.Chapecoense {
+				position: relative;
+				top: 20px;
+			}
+			
+			.Ceara {
+				position: relative;
+				top: 15px;
+			}
+			
+			.Vasco {
+				position: relative;
+				top: 7px;
+			}
+			
+			.Sport {
+				position: relative;
+				top: 15px;
+			}
+			
+			.America-MG {
+				position: relative;
+				top: 15px;
+			}
+			
+			.Vitoria {
+				position: relative;
+				top: 15px;
+			}
+			
+			/* The Modal (background) */
+			.modal {
+				display: none; /* Hidden by default */
+				position: fixed; /* Stay in place */
+				z-index: 1; /* Sit on top */
+				padding-top: 100px; /* Location of the box */
+				left: 0;
+				top: 0;
+				width: 100%; /* Full width */
+				min-height: 100%; /* Full height */
+				overflow: auto; /* Enable scroll if needed */
+				background-color: rgb(0,0,0); /* Fallback color */
+				background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+			}
+
+			/* Modal Content (image) */
+			.modal-content {
+				margin: auto;
+				display: block;
+				width: 80%;
+				max-width: 600px;
+			}
+			
+			.modal-content-2 {
+				margin: auto;
+				display: block;
+				width: 80%;
+				max-width: 400px;
+			}
+			
+			.modal-content-3 {
+				margin: auto;
+				display: block;
+				width: 80%;
+				max-width: 500px;
+			}
+
+			/* Caption of Modal Image */
+			#caption-Palmeiras {
+				margin: auto;
+				display: block;
+				width: 80%;
+				max-width: 700px;
+				text-align: center;
+				color: #ccc;
+				padding: 10px 0;
+				height: 150px;
+				font-family: Calibri;
+			}
+			
+			#caption-Flamengo {
+				margin: auto;
+				display: block;
+				width: 80%;
+				max-width: 700px;
+				text-align: center;
+				color: #ccc;
+				padding: 10px 0;
+				height: 150px;
+				font-family: Calibri;
+			}
+			
+			#caption-Internacional {
+				margin: auto;
+				display: block;
+				width: 80%;
+				max-width: 700px;
+				text-align: center;
+				color: #ccc;
+				padding: 10px 0;
+				height: 150px;
+				font-family: Calibri;
+			}
+			
+			#caption-Corinthians {
+				margin: auto;
+				display: block;
+				width: 80%;
+				max-width: 700px;
+				text-align: center;
+				color: #ccc;
+				padding: 10px 0;
+				height: 150px;
+				font-family: Calibri;
+			}
+			
+			#caption-Gremio {
+				margin: auto;
+				display: block;
+				width: 80%;
+				max-width: 700px;
+				text-align: center;
+				color: #ccc;
+				padding: 10px 0;
+				height: 150px;
+				font-family: Calibri;
+			}
+			
+			#caption-Atletico-MG {
+				margin: auto;
+				display: block;
+				width: 80%;
+				max-width: 700px;
+				text-align: center;
+				color: #ccc;
+				padding: 10px 0;
+				height: 150px;
+				font-family: Calibri;
+			}
+			
+			#caption-Atletico-PR {
+				margin: auto;
+				display: block;
+				width: 80%;
+				max-width: 700px;
+				text-align: center;
+				color: #ccc;
+				padding: 10px 0;
+				height: 150px;
+				font-family: Calibri;
+			}
+			
+			#caption-Cruzeiro {
+				margin: auto;
+				display: block;
+				width: 80%;
+				max-width: 700px;
+				text-align: center;
+				color: #ccc;
+				padding: 10px 0;
+				height: 150px;
+				font-family: Calibri;
+			}
+			
+			#caption-Botafogo {
+				margin: auto;
+				display: block;
+				width: 80%;
+				max-width: 700px;
+				text-align: center;
+				color: #ccc;
+				padding: 10px 0;
+				height: 150px;
+				font-family: Calibri;
+			}
+			
+			#caption-Santos {
+				margin: auto;
+				display: block;
+				width: 80%;
+				max-width: 700px;
+				text-align: center;
+				color: #ccc;
+				padding: 10px 0;
+				height: 150px;
+				font-family: Calibri;
+			}
+			
+			#caption-Bahia {
+				margin: auto;
+				display: block;
+				width: 80%;
+				max-width: 700px;
+				text-align: center;
+				color: #ccc;
+				padding: 10px 0;
+				height: 150px;
+				font-family: Calibri;
+			}
+			
+			#caption-Fluminense {
+				margin: auto;
+				display: block;
+				width: 80%;
+				max-width: 700px;
+				text-align: center;
+				color: #ccc;
+				padding: 10px 0;
+				height: 150px;
+				font-family: Calibri;
+			}
+			
+			#caption-Chapecoense {
+				margin: auto;
+				display: block;
+				width: 80%;
+				max-width: 700px;
+				text-align: center;
+				color: #ccc;
+				padding: 10px 0;
+				height: 150px;
+				font-family: Calibri;
+			}
+			
+			#caption-Ceara {
+				margin: auto;
+				display: block;
+				width: 80%;
+				max-width: 700px;
+				text-align: center;
+				color: #ccc;
+				padding: 10px 0;
+				height: 150px;
+				font-family: Calibri;
+			}
+			
+			#caption-Vasco {
+				margin: auto;
+				display: block;
+				width: 80%;
+				max-width: 700px;
+				text-align: center;
+				color: #ccc;
+				padding: 10px 0;
+				height: 150px;
+				font-family: Calibri;
+			}
+			
+			#caption-Sport {
+				margin: auto;
+				display: block;
+				width: 80%;
+				max-width: 700px;
+				text-align: center;
+				color: #ccc;
+				padding: 10px 0;
+				height: 150px;
+				font-family: Calibri;
+			}
+			
+			#caption-America-MG {
+				margin: auto;
+				display: block;
+				width: 80%;
+				max-width: 700px;
+				text-align: center;
+				color: #ccc;
+				padding: 10px 0;
+				height: 150px;
+				font-family: Calibri;
+			}
+			
+			#caption-Vitoria {
+				margin: auto;
+				display: block;
+				width: 80%;
+				max-width: 700px;
+				text-align: center;
+				color: #ccc;
+				padding: 10px 0;
+				height: 150px;
+				font-family: Calibri;
+			}
+			
+			#caption-Fortaleza {
+				margin: auto;
+				display: block;
+				width: 80%;
+				max-width: 700px;
+				text-align: center;
+				color: #ccc;
+				padding: 10px 0;
+				height: 150px;
+				font-family: Calibri;
+			}
+			
+			#caption-CSA {
+				margin: auto;
+				display: block;
+				width: 80%;
+				max-width: 700px;
+				text-align: center;
+				color: #ccc;
+				padding: 10px 0;
+				height: 150px;
+				font-family: Calibri;
+			}
+
+			/* Add Animation */
+			.modal-content, #caption {    
+				-webkit-animation-name: zoom;
+				-webkit-animation-duration: 0.6s;
+				animation-name: zoom;
+				animation-duration: 0.6s;
+			}
+			
+			.modal-content-2, #caption {    
+				-webkit-animation-name: zoom;
+				-webkit-animation-duration: 0.6s;
+				animation-name: zoom;
+				animation-duration: 0.6s;
+			}
+			
+			.modal-content-3, #caption {    
+				-webkit-animation-name: zoom;
+				-webkit-animation-duration: 0.6s;
+				animation-name: zoom;
+				animation-duration: 0.6s;
+			}
+
+			@-webkit-keyframes zoom {
+				from {-webkit-transform:scale(0)} 
+				to {-webkit-transform:scale(1)}
+			}
+
+			@keyframes zoom {
+				from {transform:scale(0)} 
+				to {transform:scale(1)}
+			}
+
+			/* The Close Button */
+			.close {
+				position: absolute;
+				top: 15px;
+				right: 35px;
+				color: #f1f1f1;
+				font-size: 40px;
+				font-weight: bold;
+				transition: 0.3s;
+			}
+
+			.close:hover,
+			.close:focus {
+				color: #bbb;
+				text-decoration: none;
+				cursor: pointer;
+			}
+
+			/* 100% Image Width on Smaller Screens */
+			@media only screen and (max-width: 700px){
+				.modal-content {
+					width: 100%;
+				}
+			}
+		</style>
+		<script>
+			console.log("hello console");
+			
+			function doTitle () {
+				alert ("The Campeonato Brasileiro Série A , English: Brazilian Championship A Series is a Brazilian professional league for men's football clubs. At the top of the Brazilian football league system, it is the country's primary football competition. Contested by 18 clubs, it operates on a system of promotion and relegation with the Campeonato Brasileiro Série B,C.")
+			}
+			
+			function doClose() { 
+				modal_Palmeiras.style.display = "none";
+				modal_Flamengo.style.display = "none";
+				modal_Internacional.style.display = "none";
+				modal_Gremio.style.display = "none";
+				modal_Corinthians.style.display = "none";
+				modal_Atletico_MG.style.display = "none";
+				modal_Atletico_PR.style.display = "none";
+				modal_Cruzeiro.style.display = "none";
+				modal_Botafogo.style.display = "none";
+				modal_Santos.style.display = "none";
+				modal_Bahia.style.display = "none";
+				modal_Fluminense.style.display = "none";
+				modal_Chapecoense.style.display = "none";
+				modal_Ceara.style.display = "none";
+				modal_Vasco.style.display = "none";
+				modal_Sport.style.display = "none";
+				modal_America_MG.style.display = "none";
+				modal_Vitoria.style.display = "none";
+			}	
+			
+			// Dropdown: Brasileirao
+			function doBrasileirao_Palmeiras () {
+				console.log("Palmeiras");
+				modal_Palmeiras.style.display = "block";
+				modalImg_Palmeiras.src = "Palmeiras.png";
+				captionTextPalmeiras.style.display = "block";
+			}
+			
+			function doBrasileirao_Flamengo () {
+				console.log("Flamengo");
+				modal_Flamengo.style.display = "block";
+				modalImg_Flamengo.src = "Flamengo.png";
+				captionTextFlamengo.style.display = "block";
+			}
+			
+			function doBrasileirao_Internacional () {
+				console.log("Internacional");
+				modal_Internacional.style.display = "block";
+				modalImg_Internacional.src = "Internacional.png";
+				captionTextInternacional.style.display = "block";
+			}
+			
+			function doBrasileirao_Gremio () {
+				console.log("Gremio");
+				modal_Gremio.style.display = "block";
+				modalImg_Gremio.src = "Gremio.png";
+				captionTextGremio.style.display = "block";
+			}
+			
+			function doBrasileirao_Corinthians () {
+				console.log("Corinthians");
+				modal_Corinthians.style.display = "block";
+				modalImg_Corinthians.src = "Corinthians.png";
+				captionTextCorinthians.style.display = "block";
+			}
+			
+			function doBrasileirao_Atletico_MG () {
+				console.log("Atletico-MG");
+				modal_Atletico_MG.style.display = "block";
+				modalImg_Atletico_MG.src = "galo.png";
+				captionTextAtletico_MG.style.display = "block";
+			}
+			
+			function doBrasileirao_Atletico_PR () {
+				console.log("Atletico-PR");
+				modal_Atletico_PR.style.display = "block";
+				modalImg_Atletico_PR.src = "Atletico.png";
+				captionTextAtletico_PR.style.display = "block";
+			}
+			
+			function doBrasileirao_Cruzeiro () {
+				console.log("Cruzeiro");
+				modal_Cruzeiro.style.display = "block";
+				modalImg_Cruzeiro.src = "Cruzeiro.png";
+				captionTextCruzeiro.style.display = "block";
+			}
+			
+			function doBrasileirao_Botafogo () {
+				console.log("Botafogo");
+				modal_Botafogo.style.display = "block";
+				modalImg_Botafogo.src = "Botafogo.png";
+				captionTextBotafogo.style.display = "block";
+			}
+			
+			function doBrasileirao_Santos () {
+				console.log("Santos");
+				modal_Santos.style.display = "block";
+				modalImg_Santos.src = "Santos.png";
+				captionTextSantos.style.display = "block";
+			}
+			
+			function doBrasileirao_Bahia () {
+				console.log("Bahia");
+				modal_Bahia.style.display = "block";
+				modalImg_Bahia.src = "Bahia.png";
+				captionTextBahia.style.display = "block";
+			}
+			
+			function doBrasileirao_Fluminense () {
+				console.log("Fluminense");
+				modal_Fluminense.style.display = "block";
+				modalImg_Fluminense.src = "Fluminense.png";
+				captionTextFluminense.style.display = "block";
+			}
+			
+			function doBrasileirao_Chapecoense () {
+				console.log("Chapecoense");
+				modal_Chapecoense.style.display = "block";
+				modalImg_Chapecoense.src = "Chapecoense.png";
+				captionTextChapecoense.style.display = "block";
+			}
+			
+			function doBrasileirao_Ceara () {
+				console.log("Ceara");
+				modal_Ceara.style.display = "block";
+				modalImg_Ceara.src = "Ceara.png";
+				captionTextCeara.style.display = "block";
+			}
+			
+			function doBrasileirao_Vasco () {
+				console.log("Vasco");
+				modal_Vasco.style.display = "block";
+				modalImg_Vasco.src = "Vasco.png";
+				captionTextVasco.style.display = "block";
+			}
+			
+			function doBrasileirao_Sport () {
+				console.log("Sport");
+				modal_Sport.style.display = "block";
+				modalImg_Sport.src = "Sport.png";
+				captionTextSport.style.display = "block";
+			}
+			
+			function doBrasileirao_America_MG () {
+				console.log("America-MG");
+				modal_America_MG.style.display = "block";
+				modalImg_America_MG.src = "America-MG.png";
+				captionTextAmerica_MG.style.display = "block";
+			}
+			
+			function doBrasileirao_Vitoria () {
+				console.log("Vitoria");
+				modal_Vitoria.style.display = "block";
+				modalImg_Vitoria.src = "Vitoria.png";
+				captionTextVitoria.style.display = "block";
+			}
+			
+			// Dropdown: 2. Liga
+			function doBrasileirao2_Fortaleza () {
+				console.log("Fortaleza");
+				modal_Fortaleza.style.display = "block";
+				modalImg_Fortaleza.src = "Fortaleza.png";
+				captionTextFortaleza.style.display = "block";
+			}
+			
+			function doBrasileirao2_CSA () {
+				console.log("CSA");
+				modal_CSA.style.display = "block";
+				modalImg_CSA.src = "CSA.png";
+				captionTextCSA.style.display = "block";
+			}
+			
+		</script>
+	</head>
+	<body class="all">
+		<div class="title">
+			<h1 id="Title">Brasileirao</h1>
+		</div>
+		<div class="main">
+			<div class="left-side">
+				<div>
+					<div class="dropdown">
+						<h2>The Clubs</h2>	
+						<div class="dropdown-content">
+							<div>
+								<div class="dropdown-content-align">
+									<h2>Brasileirao A</h2>
+									<ul>
+										<li id="Palmeiras">Palmeiras</li>
+										<li id="Flamengo">Flamengo</li>
+										<li id="Internacional">Internacional</li>
+										<li id="Grêmio">Grêmio</li>
+										<li id="Corinthians">Corinthians</li>
+										<li id="Atlético-MG">Atlético-MG</li>
+										<li id="Atletico-PR">Atletico-PR</li>
+										<li id="Cruzeiro">Cruzeiro</li>
+										<li id="Botafogo">Botafogo</li>
+										<li id="Santos">Santos</li>
+										<li id="Bahia">Bahia</li>
+										<li id="Fluminense">Fluminense</li>
+										<li id="Chapecoense">Chapecoense</li>
+										<li id="Ceará">Ceará</li>
+										<li id="Vasco">Vasco</li>
+										<li id="Sport">Sport</li>
+										<li id="America-MG">America-MG</li>
+										<li id="Vitoria">Vitoria</li>
+									</ul>
+								</div>
+								<div class="dropdown-content-align">
+								<h2>Brasileirao B</h2>
+									<ul>
+										<li id="Guarani">Guarani</li>
+										<li id="Fortaleza">Fortaleza</li>
+										<li id="CSA">CSA</li>
+										<li id="Avai">Avai</li>
+										<li id="Goias">Goias</li>
+										<li id="Ponte Preta">Ponte Preta</li>
+										<li id="Atletico-GO">Atletico-GO</li>
+										<li id="Vila Nova">Vila Nova</li>
+										<li id="Londrina">Londrina</li>
+										<li id="Coritiba">Coritibia</li>
+										<li id="Brasil de Pelotas">Brasil de Pelotas</li>
+										<li id="CRB">CRB</li>
+										<li id="Sao Bento">Sao Bento</li>
+										<li id="Criciuma">Criciuma</li>
+										<li id="Figueirense">Figueirense</li>
+										<li id="Oeste">Oeste</li>
+										<li id="Paysandu">Paysandu</li>
+										<li id="Juventude">Juventude</li>
+									</ul>
+								</div>
+								<div class="dropdown-content-align">
+									<h2>Brasileirao C</h2>
+									<ul>
+										<li id="Botafogo-SP">Botafogo-SP</li>
+										<li id="Operario-PR">Operario-PR</li>
+										<li id="Cuiaba-MT">Cuiaba-MT</li>
+										<li id="Nautico">Nautico</li>
+										<li id="Atletico Acreano">Atletico Acreano</li>
+										<li id="Bragantino">Bragantino</li>
+										<li id="Santa_Cruz-PE">Santa Cruz-PE</li>
+										<li id="Botafogo-PB">Botafogo-PB</li>
+										<li id="Luverdense">Luverdense</li>
+										<li id="Confianca">Confianca</li>
+										<li id="Remo">Remo</li>
+										<li id="ABC">ABC</li>
+										<li id="Volta_Redonda">Volta Redonda</li>
+										<li id="Tupi">Tupi</li>
+										<li id="Joinville">Joinville</li>
+										<li id="Salgueiro">Salgueiro</li>
+										<li id="Ypiranga-RS">Ypiranga-RS</li>
+										<li id="Tombense-MG">Tombense-MG</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>	
+				</div>	
+				<div class="clubs_1-3">
+					<div class="Palmeiras">
+						<div>
+							<img src="Palmeiras.png" width="22%">
+						</div>
+						<div>
+							Palmeiras
+						</div>
+						<span class="tooltiptext-Palmeiras">
+							Championships:
+							<ul>
+								<li>1960</li>
+								<li>1967</li>
+								<li>1967</li>
+								<li>1969</li>
+								<li>1972</li>
+								<li>1973</li>
+								<li>1993</li>
+								<li>1994</li>
+								<li>2016</li>
+								<li>2018</li>
+								<li>2019</li>
+							</ul>
+						</span>
+					</div>
+				</div>
+				<div class="clubs_1-3">
+					<div class="Flamengo">
+						<div>
+							<img src="Flamengo.png" width="15%">
+						</div>
+						<div>
+							Flamengo
+						</div>
+						<span class="tooltiptext-Flamengo">
+							Championships:
+							<ul>
+								<li>1980</li>
+								<li>1982</li>
+								<li>1983</li>
+								<li>1992</li>
+								<li>2009</li>
+							</ul>
+						</span>	
+					</div>
+				</div>
+				<div class="clubs_1-3">
+					<div class="Internacional">
+						<div>
+							<img src="Internacional.png" width="24%">
+						</div>
+						<div>
+							Internacional
+						</div>
+						<span class="tooltiptext-Internacional">
+							Championships:
+							<ul>
+								<li>1975</li>
+								<li>1976</li>
+								<li>1979</li>
+							</ul>
+						</span>
+					</div>	
+				</div>
+				<div class="clubs_4-6">
+					<div class="Gremio">
+						<div>
+							<img src="Gremio.png" width="17%">
+						</div>
+						<div>
+							Gremio
+						</div>
+						<span class="tooltiptext-Gremio">
+							Championships:
+							<ul>
+								<li>1981</li>
+								<li>1996</li>
+							</ul>
+						</span>
+					</div>
+				</div>
+				<div class="clubs_4-6">
+					<div class="Corinthians">
+						<div>
+							<img src="Corinthians.png" width="18%">
+						</div>
+						<div>
+							Corinthians
+						</div>
+						<span class="tooltiptext-Corinthians">
+							Championships:
+							<ul>
+								<li>1977</li>
+								<li>1986</li>
+								<li>1991</li>
+								<li>2006</li>
+								<li>2007</li>
+								<li>2008</li>
+							</ul>
+						</span>
+					</div>
+				</div>
+				<div class="clubs_4-6">
+					<div class="Atletico-MG">
+						<div>
+							<img src="galo.png" width="15%">
+						</div>
+						<div>
+							Atletico-MG
+						</div>
+						<span class="tooltiptext-Atletico-MG">
+							Championships:
+							<ul>
+								<li>1971</li>
+							</ul>
+						</span>
+					</div>
+				</div>
+				<div class="clubs_7-9">
+					<div class="Atletico-PR">
+						<div>
+							<img src="Atletico.png" width="19%">
+						</div>
+						<div>
+							Atletico-PR
+						</div>
+						<span class="tooltiptext-Atletico-PR">
+							Championships:
+							<ul>
+								<li>2001</li>
+							</ul>
+						</span>
+					</div>
+				</div>
+				<div class="clubs_7-9">
+					<div class="Cruzeiro">
+						<div>
+							<img src="cruzeiro.png" width="22%">
+						</div>
+						<div>
+							Cruzeiro
+						</div>
+						<span class="tooltiptext-Cruzeiro">
+							Championships:
+							<ul>
+								<li>1966</li>
+								<li>2003</li>
+								<li>2013</li>
+								<li>2014</li>									
+							</ul>
+						</span>
+					</div>
+				</div>
+				<div class="clubs_7-9">
+					<div class="Botafogo">
+						<div>
+							<img src="Botafogo.png" width="15%">
+						</div>
+						<div>
+							Botafogo
+						</div>
+						<span class="tooltiptext-Botafogo">
+							Championships:
+							<ul>
+								<li>1968</li>
+								<li>1995</li>
+							</ul>
+						</span>
+					</div>
+				</div>
+				<div class="clubs_10-12">
+					<div class="Santos">
+						<div>
+							<img src="Santos.png" width="17%">
+						</div>
+						<div>
+							Santos
+						</div>
+						<span class="tooltiptext-Santos">
+							Championships:
+							<ul>
+								<li>1961</li>
+								<li>1962</li>
+								<li>1963</li>
+								<li>1964</li>
+								<li>1965</li>
+								<li>1968</li>
+								<li>2002</li>
+								<li>2004</li>
+							</ul>
+						</span>
+					</div>
+				</div>
+				<div class="clubs_10-12">
+					<div class="Bahia">
+						<div>
+							<img src="Bahia.png" width="17%">
+						</div>
+						<div>
+							Bahia
+						</div>
+						<span class="tooltiptext-Bahia">
+							Championships:
+							<ul>
+								<li>1959</li>
+								<li>1988</li>
+							</ul>
+						</span>
+					</div>
+				</div>
+				<div class="clubs_10-12">
+					<div class="Fluminense">
+						<div>
+							<img src="Fluminense.png" width="20%">
+						</div>
+						<div>
+							Fluminense
+						</div>
+						<span class="tooltiptext-Fluminense">
+							Championships:
+							<ul>
+								<li>1970</li>
+								<li>1984</li>
+								<li>2010</li>
+								<li>2012</li>
+							</ul>
+						</span>
+					</div>
+				</div>
+				<div class="clubs_13-15">
+					<div class="Chapecoense">
+						<div>
+							<img src="Chapecoense.png" width="17%">
+						</div>
+						<div>
+						Chapecoense
+						</div>
+						<span class="tooltiptext-Chapecoense">
+							Championships:
+							<ul>
+								<li>no championships</li>
+							</ul>
+						</span>
+					</div>
+				</div>
+				<div class="clubs_13-15">
+					<div class="Ceara">
+						<div>
+							<img src="Ceara.png" width="20%">
+						</div>
+						<div>
+							Ceara
+						</div>
+						<span class="tooltiptext-Ceara">
+							Championships:
+							<ul>
+								<li>no championships</li>
+							</ul>
+						</span>
+					</div>
+				</div>
+				<div class="clubs_13-15">
+					<div class="Vasco">
+						<div>
+							<img src="Vasco.png" width="17%">
+						</div>
+						<div>
+							Vasco
+						</div>
+						<span class="tooltiptext-Vasco">
+							Championships:
+							<ul>
+								<li>1974</li>
+								<li>1989</li>
+								<li>1997</li>
+								<li>2000</li>
+							</ul>
+						</span>
+					</div>
+				</div>
+				<div class="clubs_16-18">
+					<div class="Sport">
+						<div>
+							<img src="Sport.png" width="18%">
+						</div>
+						<div>
+							Sport
+						</div>
+						<span class="tooltiptext-Sport">
+							Championships:
+							<ul>
+								<li>1987</li>
+							</ul>
+						</span>
+					</div>
+				</div>
+				<div class="clubs_16-18">
+					<div class="America-MG">
+						<div>
+							<img src="America-MG.png" width="18%">
+						</div>
+						<div>
+							America-MG
+						</div>
+						<span class="tooltiptext-America-MG">
+							Championships:
+							<ul>
+								<li>no championships</li>
+							</ul>
+						</span>
+					</div>
+				</div>
+				<div class="clubs_16-18">
+					<div class="Vitoria">
+						<div>
+							<img src="Vitoria.png" width="20%">
+						</div>
+						<div>
+							Vitoria
+						</div>
+						<span class="tooltiptext-Vitoria">
+							Championships:
+							<ul>
+								<li>no championships</li>
+							</ul>
+						</span>
+					</div>
+				</div>
+				<div class="upcoming-games-main">
+					<h2>Upcoming Games:</h2>
+					<div class="upcoming-games-insite">
+						<p><img src="Palmeiras.png" width="40%"></p>
+						<p>V.S.</p>
+						<p><img src="Flamengo.png" width="35%"></p>
+					</div>
+					<div class="upcoming-games-insite">
+						<p><img src="Santos.png" width="32%"></p>
+						<p>V.S.</p>
+						<p><img src="Botafogo.png" width="38%"></p>
+					</div>
+					<div class="upcoming-games-insite">
+						<p><img src="Atletico.png" width="34%"></p>
+						<p>V.S.</p>
+						<p><img src="galo.png" width="32%"></p>
+					</div>
+					<div class="upcoming-games-insite">
+						<p><img src="Fluminense.png" width="34%"></p>
+						<p>V.S.</p>
+						<p><img src="Chapecoense.png" width="40%"></p>
+					</div>
+					<div class="upcoming-games-insite">
+						<p><img src="Ceara.png" width="40%"></p>
+						<p>V.S.</p>
+						<p><img src="Bahia.png" width="36%"></p>
+					</div>
+					<div class="upcoming-games-insite">
+						<p><img src="Vasco.png" width="34%"></p>
+						<p>V.S.</p>
+						<p><img src="Cruzeiro.png" width="34%"></p>
+					</div>
+					<div class="upcoming-games-insite">
+						<p><img src="Sport.png" width="28%"></p>
+						<p>V.S.</p>
+						<p><img src="America-MG.png" width="27%"></p>
+					</div>
+					<div class="upcoming-games-insite">
+						<p><img src="Internacional.png" width="40%"></p>
+						<p>V.S.</p>
+						<p><img src="Vitoria.png" width="30%"><p>
+					</div>
+					<div class="upcoming-games-insite">
+						<p><img src="Gremio.png" width="34%"></p>
+						<p>V.S.</p>
+						<p><img src="Corinthians.png" width="28%"></p>
+					</div>
+				</div>
+			</div>
+			<div class="right-side">
+				<div class="resuls">
+					<h2>Results:</h2>
+					<p> <img src="Internacional.png" width="20%"> 2:1 <img src="Santos.png" width="16%"> </p>
+					<p> <img src="Palmeiras.png" width="25%"> 4:0 <img src="Corinthians.png" width="15%"> </p>
+					<p> <img src="Flamengo.png" width="15%"> 2:3 <img src="Vitoria.png" width="22%"> </p>
+					<p> <img src="galo.png" width="20%"> 0:0 <img src="Cruzeiro.png" width="20%"> </p>
+					<p> <img src="Gremio.png" width="20%"> 1:0 <img src="Botafogo.png" width="20%"> </p>
+					<p> <img src="Atletico.png" width="20%"> 1:1 <img src="America-MG.png" width="17%"> 	</p>
+				</div>
+				<div class="table">
+					<div class="table-title">
+						<h2>Table:</h2>
+					</div>
+					<ol>
+						<li class="first">Palmeiras</li>
+						<li class="second">Flamengo</li>
+						<li class="third">Internacional</li>
+						<li class="fourth">Gremio</li>
+						<li class="fifth">Corinthians</li>
+						<li class="sixh">Atletico-MG</li>
+						<li class="seventh">Athletico-PR</li>
+						<li class="eighth">Cruzeiro</li>
+						<li class="ninth">Botafogo</li>
+						<li class="tenth">Santos</li>
+						<li class="eleventh">Bahia</li>
+						<li class="twelfth">Fluminense</li>
+						<li class="thirteenth">Chapecoense</li>
+						<li class="fourteenth">Ceara</li>
+						<li class="fifteenth">Vasco</li>
+						<li class="sixteenth">Sport</li>
+						<li class="seventeenth">America-MG</li>
+						<li class="eighteenth">Vitoria</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+		<!-- The Modal / Palmeiras -->
+		<div id="Modal_Palmeiras" class="modal">
+			<span id="close-Palmeiras" class="close">&times;</span>
+			<img class="modal-content" id="Palmeiras-Logo" src="Palmeiras.png">
+			<div id="caption-Palmeiras">
+				Championships: 
+				1960 -
+				1967 -
+				1967 -
+				1969 -
+				1972 -
+				1973 -
+				1993 -
+				1994 -
+				2016 -
+				2018 -
+				2019
+			</div>
+		</div>
+		<!-- The Modal / Flamengo -->
+		<div id="Modal_Flamengo" class="modal">
+			<span id="close-Flamengo" class="close">&times;</span>
+			<img class="modal-content" id="Flamengo-Logo" src="Flamengo.png">
+			<div id="caption-Flamengo">
+				Championships:
+					1980;
+					1982;
+					1983;
+					1992;
+					2009;
+			</div>
+		</div>
+		<!-- The Modal / Internacional -->
+		<div id="Modal_Internacional" class="modal">
+			<span id="close-Internacional" class="close">&times;</span>
+			<img class="modal-content" id="Internacional-Logo" src="Internacional.png">
+			<div id="caption-Internacional">
+				Championships: 2009
+			</div>
+		</div>
+		<!-- The Modal / Gremio -->
+		<div id="Modal_Gremio" class="modal">
+			  <span id="close-Gremio" class="close">&times;</span>
+			  <img class="modal-content" id="Gremio-Logo" src="Gremio.png">
+			  <div id="caption-Gremio">
+				Championships: 1930; 1931
+			</div>
+		</div>
+		<!-- The Modal / Corinthians -->
+		<div id="Modal_Corinthians" class="modal">
+			<span id="close-Corinthians" class="close">&times;</span>
+			<img class="modal-content" id="Corinthians-Logo" src="Corinthians.png">
+			<div id="caption-Corinthians">
+				Championships: 1990; 1998; 1999; 2005; 2011; 2015; 2017
+			</div>
+		</div>
+		<!-- The Modal / Atletico-MG -->
+		<div id="Modal_Atletico-MG" class="modal">
+			  <span id="close-Atletico-MG" class="close">&times;</span>
+			  <img class="modal-content" id="Atletico-MG-Logo" src="galo.png">
+			  <div id="caption-Atletico-MG">
+				Championships: no Championships
+			</div>
+		</div>
+		<!-- The Modal / Atletico-PR -->
+		<div id="Modal_Atletico-PR" class="modal">
+			  <span id="close-Atletico-PR" class="close">&times;</span>
+			  <img class="modal-content-2" id="Atletico-PR-Logo" src="Atletico.png">
+			  <div id="caption-Atletico-PR">
+				Championships:
+					1965;
+					1988;
+					1993;
+					2004
+			</div>
+		</div>
+		<!-- The Modal / Cruzeiro -->
+		<div id="Modal_Cruzeiro" class="modal">
+			<span id="close-Cruzeiro" class="close">&times;</span>
+			<img class="modal-content-2" id="Cruzeiro-Logo" src="Cruzeiro.png">
+			<div id="caption-Cruzeiro">
+				Championships: no Championships
+			</div>
+		</div>
+		<!-- The Modal / Botafogo -->
+		<div id="Modal_Botafogo" class="modal">
+			  <span id="close-Botafogo" class="close">&times;</span>
+			  <img class="modal-content" id="Botafogo-Logo" src="Botafogo.png">
+			  <div id="caption-Botafogo">
+				Championships: 1933
+			</div>
+		</div>
+		<!-- The Modal / Santos -->
+		<div id="Modal_Santos" class="modal">
+			<span id="close-Santos" class="close">&times;</span>
+			<img class="modal-content" id="Santos-Logo" src="Santos.png">
+			<div id="caption-Santos">
+				Championships: no Championships
+			</div>
+		</div>
+		<!-- The Modal / Bahia -->
+		<div id="Modal_Bahia" class="modal">
+			<span id="close-Bahia" class="close">&times;</span>
+			<img class="modal-content-3" id="Bahia-Logo" src="Bahia.png">
+			<div id="caption-Bahia">
+				Championships: no Championships
+			</div>
+		</div>
+		<!-- The Modal / Fluminense -->
+		<div id="Modal_Fluminense" class="modal">
+			<span id="close-Fluminense" class="close">&times;</span>
+			<img class="modal-content" id="Fluminense-Logo" src="Fluminense.png">
+			<div id="caption-Fluminense">
+				Championships: 1959
+			</div>
+		</div>
+		<!-- The Modal / Chapecoense -->
+		<div id="Modal_Chapecoense" class="modal">
+			<span id="close-Chapecoense" class="close">&times;</span>
+			<img class="modal-content" id="Chapecoense-Logo" src="Chapecoense.png">
+			<div id="caption-Chapecoense">
+				Championships: 1938; 1954
+			</div>
+		</div>
+		<!-- The Modal / Ceara -->
+		<div id="Modal_Ceara" class="modal">
+			<span id="close-Ceara" class="close">&times;</span>
+			<img class="modal-content" id="Ceara-Logo" src="Ceara.png">
+			<div id="caption-Ceara">
+				Championships:
+					1920;
+					1921;
+					1924;
+					1925;
+					1927;
+					1936;
+					1948;
+					1961;
+					1968
+			</div>
+		</div>
+		<!-- The Modal / Vasco -->
+		<div id="Modal_Vasco" class="modal">
+			<span id="close-Vasco" class="close">&times;</span>
+			<img class="modal-content-2" id="Vasco-Logo" src="Vasco.png">
+			<div id="caption-Vasco">
+				Championships: no Championships
+			</div>
+		</div>
+		<!-- The Modal / Sport -->
+		<div id="Modal_Sport" class="modal">
+			<span id="close-Sport" class="close">&times;</span>
+			<img class="modal-content-3" id="Sport-Logo" src="Sport.png">
+			<div id="caption-Sport">
+				Championships:
+					1950;
+					1952;
+					1984;
+					1992;
+					2007
+			</div>
+		</div>
+		<!-- The Modal / America-MG -->
+		<div id="Modal_America-MG" class="modal">
+			<span id="close-America-MG" class="close">&times;</span>
+			<img class="modal-content" id="America-MG-Logo" src="America-MG.png">
+			<div id="caption-America-MG">
+				Championships:
+					1934
+					1935;
+					1937;
+					1940;
+					1942;
+					1958
+			</div>
+		</div>
+		<!-- The Modal / Vitoria -->
+		<div id="Modal_Vitoria" class="modal">
+			<span id="close-Vitoria" class="close">&times;</span>
+			<img class="modal-content" id="Vitoria-Logo" src="Vitoria.png">
+			<div id="caption-Vitoria">
+				Championships: no Championships
+			</div>
+		</div>
+		<!-- The Modal / Fortaleza -->
+		<div id="Modal_Fortaleza" class="modal">
+			<span id="close-Fortaleza" class="close">&times;</span>
+			<img class="modal-content" id="Fortaleza-Logo" src="Fortaleza.png">
+			<div id="caption-Fortaleza">
+				Championships: 1923; 1928; 1960; 1979; 1982; 1983
+			</div>
+		</div>
+		<!-- The Modal / CSA -->
+		<div id="Modal_CSA" class="modal">
+			<span id="close-CSA" class="close">&times;</span>
+			<img class="modal-content-2" id="CSA-Logo" src="CSA.png">
+			<div id="caption-CSA">
+				Championships: no Championships
+			</div>
+		</div>
+
+</body>
+	</body>
+	<script>
+		//The Modal/Palmeiras
+		var modal_Palmeiras = document.getElementById('Modal_Palmeiras');
+		var modalImg_Palmeiras = document.getElementById("Palmeiras-Logo");
+		var captionTextPalmeiras = document.getElementById("caption-Palmeiras");
+		//The Modal/Flamengo
+		var modal_Flamengo = document.getElementById('Modal_Flamengo');
+		var modalImg_Flamengo = document.getElementById("Flamengo-Logo");
+		var captionTextFlamengo = document.getElementById("caption-Flamengo");
+		//The Modal/Internacional
+		var modal_Internacional = document.getElementById('Modal_Internacional');
+		var modalImg_Internacional = document.getElementById("Internacional-Logo");
+		var captionTextInternacional = document.getElementById("caption-Internacional");
+		//The Modal/Gremio
+		var modal_Gremio = document.getElementById('Modal_Gremio');
+		var modalImg_Gremio = document.getElementById("Gremio-Logo");
+		var captionTextGremio = document.getElementById("caption-Gremio");
+		//The Modal/Corinthians
+		var modal_Corinthians = document.getElementById('Modal_Corinthians');
+		var modalImg_Corinthians = document.getElementById("Corinthians-Logo");
+		var captionTextCorinthians = document.getElementById("caption-Corinthians");
+		//The Modal/Atletico-MG
+		var modal_Atletico_MG = document.getElementById('Modal_Atletico-MG');
+		var modalImg_Atletico_MG = document.getElementById("Atletico-MG-Logo");
+		var captionTextAtletico_MG = document.getElementById("caption-Atletico-MG");
+		//The Modal/Atletico-PR
+		var modal_Atletico_PR = document.getElementById('Modal_Atletico-PR');
+		var modalImg_Atletico_PR = document.getElementById("Atletico-PR-Logo");
+		var captionTextAtletico_PR = document.getElementById("caption-Atletico-PR");
+		//The Modal/Cruzeiro
+		var modal_Cruzeiro = document.getElementById('Modal_Cruzeiro');
+		var modalImg_Cruzeiro = document.getElementById("Cruzeiro-Logo");
+		var captionTextCruzeiro = document.getElementById("caption-Cruzeiro");
+		//The Modal/Botafogo
+		var modal_Botafogo = document.getElementById('Modal_Botafogo');
+		var modalImg_Botafogo = document.getElementById("Botafogo-Logo");
+		var captionTextBotafogo = document.getElementById("caption-Botafogo");
+		//The Modal/Santos
+		var modal_Santos = document.getElementById('Modal_Santos');
+		var modalImg_Santos = document.getElementById("Santos-Logo");
+		var captionTextSantos = document.getElementById("caption-Santos");
+		//The Modal/Bahia
+		var modal_Bahia = document.getElementById('Modal_Bahia');
+		var modalImg_Bahia = document.getElementById("Bahia-Logo");
+		var captionTextBahia = document.getElementById("caption-Bahia");
+		//The Modal/Fluminense
+		var modal_Fluminense = document.getElementById('Modal_Fluminense');
+		var modalImg_Fluminense = document.getElementById("Fluminense-Logo");
+		var captionTextFluminense = document.getElementById("caption-Fluminense");
+		//The Modal/Chapecoense
+		var modal_Chapecoense = document.getElementById('Modal_Chapecoense');
+		var modalImg_Chapecoense = document.getElementById("Chapecoense-Logo");
+		var captionTextChapecoense = document.getElementById("caption-Chapecoense");
+		//The Modal/Ceara
+		var modal_Ceara = document.getElementById('Modal_Ceara');
+		var modalImg_Ceara = document.getElementById("Ceara-Logo");
+		var captionTextCeara = document.getElementById("caption-Ceara");
+		//The Modal/Vasco
+		var modal_Vasco = document.getElementById('Modal_Vasco');
+		var modalImg_Vasco = document.getElementById("Vasco-Logo");
+		var captionTextVasco = document.getElementById("caption-Vasco");
+		//The Modal/Sport
+		var modal_Sport = document.getElementById('Modal_Sport');
+		var modalImg_Sport = document.getElementById("Sport-Logo");
+		var captionTextSport = document.getElementById("caption-Sport");
+		//The Modal/America-MG
+		var modal_America_MG = document.getElementById('Modal_America-MG');
+		var modalImg_America_MG = document.getElementById("America-MG-Logo");
+		var captionTextAmerica_MG = document.getElementById("caption-America-MG");
+		//The Modal/Vitoria
+		var modal_Vitoria = document.getElementById('Modal_Vitoria');
+		var modalImg_Vitoria = document.getElementById("Vitoria-Logo");
+		var captionTextVitoria = document.getElementById("caption-Vitoria");
+		//The Modal/Fortaleza
+		var modal_Fortaleza = document.getElementById('Modal_Fortaleza');
+		var modalImg_Fortaleza = document.getElementById("Fortaleza-Logo");
+		var captionTextFortaleza = document.getElementById("caption-Fortaleza");
+
+		//Modal/Close
+		document.getElementById("close-Palmeiras").addEventListener("click",doClose);
+		document.getElementById("close-Flamengo").addEventListener("click",doClose);
+		document.getElementById("close-Internacional").addEventListener("click",doClose);
+		document.getElementById("close-Gremio").addEventListener("click",doClose);
+		document.getElementById("close-Corinthians").addEventListener("click",doClose);
+		document.getElementById("close-Atletico-MG").addEventListener("click",doClose);
+		document.getElementById("close-Atletico-PR").addEventListener("click",doClose);
+		document.getElementById("close-Cruzeiro").addEventListener("click",doClose);
+		document.getElementById("close-Botafogo").addEventListener("click",doClose);
+		document.getElementById("close-Santos").addEventListener("click",doClose);
+		document.getElementById("close-Bahia").addEventListener("click",doClose);
+		document.getElementById("close-Fluminense").addEventListener("click",doClose);
+		document.getElementById("close-Chapecoense").addEventListener("click",doClose);
+		document.getElementById("close-Ceara").addEventListener("click",doClose);
+		document.getElementById("close-Vasco").addEventListener("click",doClose);
+		document.getElementById("close-Sport").addEventListener("click",doClose);
+		document.getElementById("close-America-MG").addEventListener("click",doClose);
+		document.getElementById("close-Vitoria").addEventListener("click",doClose);
+		document.getElementById("close-Fortaleza").addEventListener("click",doClose); 
+		document.getElementById("close-CSA").addEventListener("click",doClose);
+		//Brasileirao/Info
+		document.getElementById("Title").addEventListener("click",doTitle);
+		//Brasileirao
+		document.getElementById("Palmeiras").addEventListener("click",doBrasileirao_Palmeiras);
+		document.getElementById("Flamengo").addEventListener("click",doBrasileirao_Flamengo);
+		document.getElementById("Internacional").addEventListener("click",doBrasileirao_Internacional);
+		document.getElementById("Gremio").addEventListener("click",doBrasileirao_Gremio);
+		document.getElementById("Corinthians").addEventListener("click",doBrasileirao_Corinthians);
+		document.getElementById("Atletico-MG").addEventListener("click",doBrasileirao_Atletico-MG);
+		document.getElementById("Atletico-PR").addEventListener("click",doBrasileirao_Atletico-PR);
+		document.getElementById("Cruzeiro").addEventListener("click",doBrasileirao_Cruzeiro);
+		document.getElementById("Botafogo").addEventListener("click",doBrasileirao_Botafogo);
+		document.getElementById("Santos").addEventListener("click",doBrasileirao_Santos);
+		document.getElementById("Bahia").addEventListener("click",doBrasileirao_Bahia);
+		document.getElementById("Fluminense").addEventListener("click",doBrasileirao_Fluminense);
+		document.getElementById("Chapecoense").addEventListener("click",doBrasileirao_Chapecoense);
+		document.getElementById("Ceara").addEventListener("click",doBrasileirao_Ceara);
+		document.getElementById("Vasco").addEventListener("click",doBrasileirao_Vasco);
+		document.getElementById("Sport").addEventListener("click",doBrasileirao_Sport);
+		document.getElementById("America-MG").addEventListener("click",doBrasileirao_America-MG);
+		document.getElementById("Vitoria").addEventListener("click",doBrasileirao_Vitoria);
+		//Brasileirao2
+		document.getElementById("Fortaleza").addEventListener("click",doBrasileirao2_Fortaleza);
+		document.getElementById("CSA").addEventListener("click",doBrasileirao2_CSA);
+	</script>
+</html>

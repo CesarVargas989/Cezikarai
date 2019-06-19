@@ -1,0 +1,22 @@
+<style>
+</style>
+<body>
+	<div>
+		<h1><center> Bill has a store that sells Widgets, Doodads and Thingies. When I went there I bought 5 widgets, for <span id="numberZ2"> 3 </span> Doodads and <span id="numberZ3"> 3 </span> Thingies, totalizing <span id="result"> 100 </span> dollars </center></h1>
+	</div>
+</body>
+<script>
+	var Widgets = 19.95
+	var WidSold = 2
+	var Doodads = 8.95
+	var DoodSold = 3
+	var Thingies = 11.99
+	var ThingSold = 1 
+	var myNumberSquare = (Widgets * WidSold) + (Doodads * DoodSold) + (Thingies * ThingSold) ;
+	
+	document.getElementById("numberZ1").innerText = Widgets;
+	document.getElementbyId("numberZ2").innertext = Doodads;
+	document.getElementbyId("numberZ3").innertext = Thingies;
+	document.getElementById("result").innerText = myNumberSquare;
+	
+</script>

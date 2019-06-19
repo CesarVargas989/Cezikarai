@@ -1,0 +1,104 @@
+<head>
+    <title>Game Assignment</title>
+    <script>
+        var charName = "Cesar";
+        var charClass = "Mage";
+        var charTHAC0 = 20;
+        var charAC = 2;
+        var charHP = 100
+        var weapon = "Sword";
+        var weaponEnchant = 1;
+        var weaponDamage = 8;
+		var doneDamage = ( weaponDamage * weaponEnchant )
+		
+        var monsterName = "Orgo the Orc";
+        var monsterTHAC0 = 20;
+        var monsterAC = 4;
+        var monsterDamage = 5;
+        var monsterHP = 100;
+        
+        function display() {
+			
+			
+		   // This function should display the current hp of the character and the monster
+            // Output should be displayed in the "message" ID DIV element
+        }
+        
+        function isHit() {
+            var x = Math.floor((Math.random() * 20) + 1);
+			if (x >= 11) {
+				return true;
+			}
+			else {
+				return false;
+			}
+            var myNumberSquare = THACO - AC - weaponEnchant ;
+			document.getElementById("result").innerText = myNumberSquare ;
+			
+        }
+        
+        function charDamage(base,enchants) {
+            var doneDamage = ( Damage * Enchant )
+            var y =  Math.floor((Math.random() * 8) + 1)
+			return doneDamage
+        }
+        
+        function procDamage(currHP,damage) {
+			// calculate the remaining.
+				var life = monsterHP - doneDamage
+            // remaining hp is calculated as the currHP - damage
+				var remainingHP = monsterHP - doneDamage
+            // return value is the remaining HP
+				return life
+        }
+        
+        function attack() {
+			// processes an attack
+				var checkHit = isHit();
+			// checks to see if the character hits
+				if (checkHit == true) {
+					console.log("hit");
+				}
+				else {
+					console.log('miss');
+			}
+            // calculates damage using the charDamage function.
+				var damage = doneDamage
+            // monster hp remaining is calculated using the procDamage function
+				
+            // updates the display using the display function
+			
+        }
+        
+    </script>
+</head>
+<body>
+	<div id="message"></div>
+    <button id="myButton" type="button">Attack with Sword</button>
+	<div><h1>Starting Status</h1></div>
+	<div>
+		<h3> Cesar`s health = 15 </h3>
+	</div>
+	<div>
+		<h3> Orgo`s health = 20 </h3>
+	</div>
+	<div>
+		<h3> Character Damage = 8 </h3>
+	</div>
+	<div><h1>Overall Status</h1></div>
+	<div>
+		<h3> Cesar`s health = <span id="resultX">1</span> </h3>
+	</div>
+	<div>
+		<h3> Orgo`s health = <span id="resultY">1</span> </h3>
+	</div>
+	<div>
+		<h3> Character Damage = <span id="resultZ">1</span> </h3>
+	</div>
+</body>
+<script>
+    document.getElementById("myButton").addEventListener("click",attack);
+	document.getElementById("resultX").innerText = charHP ;
+	document.getElementById("resultY").innerText = monsterHP	;
+	document.getElementById("resultZ").innerText = doneDamage ;
+</script>

@@ -1,0 +1,62 @@
+<style>
+	div.section {
+		border: 1px solid black;
+		border-radius: 100px;
+		background-color: #ADADAD;
+		border-width: 130px
+	}
+</style>
+<body>
+	<div class="section">
+		<div>
+			<h1><center><span id="number"> 1 </span> degrees celsius is <span id="result"> 33,8 </span> degrees fahrenheit </center></h1>
+		</div>
+		<div>
+			<h1><center> The average of <span id="numberX"> 1 </span> is <span id="resultX"> 1 </span></center></h1>
+		</div>
+		<div>
+			<h1><center> The price of a product is <span id="numberY">1</span> dollars, but with taxes become <span id="resultY"> 1.12 </span></center></h1>
+		</div>
+		<div>
+			<h1><center> Bill has a store that sells Widgets, Doodads and Thingies. When I went there I bought <span id="numberZ1">5</span> widgets, for <span id="numberZ2"> 3 </span> Doodads and <span id="numberZ3"> 3 </span> Thingies, totalizing <span id="result"> 100 </span> dollars </center></h1>
+		</div>
+	</div>	
+</body>
+<script>
+	var myNumber = 18;
+	var ninefive = 9/5
+	var fahrenheit = 32
+	var myNumberSquare = (myNumber * ninefive) + fahrenheit ;
+	
+	document.getElementById("number").innerText = myNumber;
+	document.getElementById("result").innerText = myNumberSquare;
+	var Number1 = 44
+	var Number2 = 89
+	var Number3 = 12
+	var Number4 = 66
+	var Number5 = 18
+	var cinco = 5
+	var myNumberSquare = (Number1 + Number2 + Number3 + Number4 + Number5) / cinco ;
+	
+	document.getElementById("numberX").innerText = Number1 + Number2 + Number3 + Number4 + Number5;
+	document.getElementById("resultX").innerText = myNumberSquare;
+	var Numero1 = 44
+	var taxes = 0.12
+	var myNumberSquare = Numero1 + (Numero1 * taxes);
+	
+	document.getElementById("numberY").innerText = Numero1;
+	document.getElementById("resultY").innerText = myNumberSquare;
+	var Widgets = 19.95
+	var WidSold = 2
+	var Doodads = 8.95
+	var DoodSold = 3
+	var Thingies = 11.99
+	var ThingSold = 1 
+	var myNumberSquare = Widgets * WidSold + Doodads * DoodSold + Thingies * ThingSold ;
+	
+	document.getElementById("numberZ1").innerText = Widgets;
+	document.getElementbyId("numberZ2").innertext = Doodads;
+	document.getElementbyId("numberZ3").innertext = Thingies;
+	document.getElementById("result").innerText = myNumberSquare;
+	
+</script>

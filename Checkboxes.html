@@ -1,0 +1,86 @@
+<!docype html>
+<html>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<head><h1><center>GYM FORM</center></h1>
+		<style>
+			div#msgBox {
+			  border: 1px solid #333;
+			  background-color: #eee;
+			  height: 50px;
+			  width: 60%;
+			  padding: 6px;
+			  border-radius: 3px;
+			}
+		</style>
+		<title>Gym Form</title>
+			<div id="msgBox">
+
+			</div>
+			Gender<br>
+			Male <input type="checkbox" name='Box 1' value='Male'>
+			Female <input type="checkbox" checked name='Box 2' value='Female'><br><br>
+			Weight<br>
+			> 50kg <input type="checkbox" name='Box 3' value='Your weight is less than 50kg'>
+			51kg-80kg <input type="checkbox" id='Box 4' value='Your weight is between 50 and 80 kg'>	
+			81kg > <input type="checkbox" name='Box 5' value='Your weight is greater then 80kg'><br><br>
+			Height<br>
+			> 1.50 <input type="checkbox" id='box6' value='Your height is less than 1.50m'>
+			1.51-1.80 <input type="checkbox" id='box7' value='Your height is between 1.51 and 1.80 m'>	
+			1.81 > <input type="checkbox" id='box8' value='Your height is higher than 1.81m'><br><br>	
+			
+			<input type="button" value="Submit"></button>
+
+		<script>
+// this event is triggered when ANY input is clicked
+$("input").on("click", inpClicked)
+
+// notice that if you want to select using multiple ID's, use the comma to separate them
+// this event is triggered when either #box5 OR #box6 is clicked
+$("input#box5,input#box6").on("click",inpIDClicked)
+
+// NOTE:  When input#box5 is clicked, BOTH events are triggered, so what happens?
+// What problems might this cause?  Which one should go first?
+
+function inpIDClicked(evt) {
+var inpID = evt.target.id;
+var element = evt.target;
+$("#msgBox").html("You clicked the input with ID " + inpID + "<br>")
+}
+
+function inpClicked(evt) {
+	var inpName = evt.target.name;
+  var element = evt.target;
+	$("#msgBox").html("You clicked " + inpName + "<br>");
+  $("#msgBox").append(inpName + " has value " + element.value + "<br>");
+  switch (inpName) {
+  	case "box1" : {
+    	var isChecked = $("#msgBox").attr("checked")
+    	$("#msgBox").append();
+      
+    };
+    case "box 2" :
+    case "box 3" :
+    case "box 4" : {
+    	$("#msgBox").append("You clicked on one of the boxes that has a name attribute<br>");
+      
+        if ($("input[name="+inpName+"]").prop("checked") )
+      		$("#msgBox").append("This element is checked")
+      	else
+      		$("#msgBox").append("This element is not checked")
+    } break;
+   	case "disable" : {
+    	//console.log("enabling/disabling element");
+      var myTarget = $("input[name=box3]")
+    	if ($("input[name=box3]").attr("disabled"))
+      	$("input[name=box3]").removeAttr("disabled")
+       else
+       	$("input[name=box3]").attr("disabled",true);
+    	
+    } break;
+   	default: {
+    	$("#msgBox").append("Box5 and Box6 do not have name attributes.")
+    } break;
+  }
+}
+		</script>
+	</head>

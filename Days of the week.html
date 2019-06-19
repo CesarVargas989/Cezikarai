@@ -1,0 +1,48 @@
+<!docype html>
+<html>
+	<head>
+		<title>Days of the week</title>PRESS EITHER Q, W, E, R, T, Y OR U TO SEE THE DAYS OF THE WEEK
+			<style>div {
+			  border: 1px solid black;
+			}
+
+			div.sample {
+			  font-family: "arial"
+			}
+			</style>
+			<script>
+				var screenColor = 0;
+
+				//this event listens for a key to be pressed anywhere in the document and loads function "readKey" when it is detected
+				document.addEventListener("keydown",readKey)
+
+
+				function readKey(event) {
+				//  function is triggered on an event, so information about the event is passed to it as a variable
+
+				// all of the information passed to the event object is displayed in the console
+				console.log(event);
+
+				// we are looking for some specific information: the ASCII keyCode
+				var keyInfo = event.keyCode;
+
+				// switch statement to read which keycode was pressed
+				switch (keyInfo) {
+				  case 81: alert("MONDAY, Monday is the day of the week between Sunday and Tuesday. According to the international standard ISO 8601 it is the first day of the week.")
+				  break;
+				  case 87: alert("TUESDAY, Tuesday is the day of the week between Monday and Wednesday. According to international standard ISO 8601, it is the second day of the week.")
+				  break;
+				  case 69 : alert("WEDNESDAY, Wednesday is the day of the week between Tuesday and Thursday. According to international standard ISO 8601 it is the third day of the week.")
+				  break;
+				  case 82 :alert("THURSDAY, Thursday is the day of the week between Wednesday and Friday. According to the ISO 8601 international standard, it is the fourth day of the week.")
+				  break;
+				  case 84 :alert("FRIDAY, Friday is the day of the week between Thursday and Saturday. According to the ISO 8601 international standard, it is the fifth day of the week.")
+				  break;
+				  case 89 :alert("SATURDAY, Saturday is the day of the week between Friday and Sunday. According to the ISO 8601 international standard, it is the sixth day of the week.")
+				  break;
+				  case 85: alert("SUNDAY, Sunday is the day of the week between Saturday and Monday. According to the ISO 8601 international standard, it is the seventh day of the week.");
+				  break;
+				  }
+				}
+					
+				</script>

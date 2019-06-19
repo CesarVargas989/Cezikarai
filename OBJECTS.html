@@ -1,0 +1,38 @@
+<html>
+<div id="display"></div>
+	<script>
+		var myObject = {};
+
+		myObject.name = "Braum, the hearth of Freljord";
+		myObject.style = "Support";
+		myObject.skins = []
+		myObject.skins[0] = "Santa Braum";
+		myObject.skins[1] = "Dragonslayer Braum" 
+		myObject.skins[2] = "Lionhearth Braum" 
+		myObject.stats = {}
+		myObject.stats.health = 540;
+		myObject.stats.healthPerLevel = 87;
+		myObject.stats.healthRegen = 8;
+		myObject.stats.healthRegenPerlevel = 1;
+		myObject.stats.armor = 47;
+		myObject.stats.armorPerLevel = 1.5
+		myObject.stats.magicResist = 32.1;
+		myObject.stats.magicResistPerLevel = 1.25
+		myObject.stats.attackDamage = 55.376;
+		myObject.stats.attackDamagePerLevel = 3.2
+		myObject.stats.moveSpeed = 335;
+		myObject.abilities = []
+		myObject.abilities[1] = "Winter`s bite";
+		myObject.abilities[2] = "Stand Behind Me";
+		myObject.abilities[3] = "Unbreakable";
+		myObject.abilities[4] = "Glacial Fissure";
+		myObject.abilities[0] = "Concussive Blows";
+		
+		
+		
+		console.log(myObject);
+		console.log(myObject.name);
+
+		document.getElementById("display").innerHTML = myObject.name;
+	</script>
+</html>

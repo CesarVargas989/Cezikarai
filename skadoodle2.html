@@ -1,0 +1,24 @@
+<body>
+	<div id="output"></div>
+	<button id="runprog">Perform money Check</button>
+</body>
+<script>
+	
+	function doCheck() {
+		var Money;
+		var puppy;
+		
+		Money = prompt("Enter your current money");
+		var output = document.getElementById("output");
+		
+		if ( Money >=750 ) {
+			output.innerHTML = "If you have " + Money + " dollars,<br>";
+			output.innerHTML += "then you have enough money to buy a puppy.";
+		}
+		else 
+			output.innerHTML = "You dont have enough money to buy a puppy.";
+
+	}
+
+	document.getElementById("runprog").addEventListener("click",doCheck);
+</script>	
